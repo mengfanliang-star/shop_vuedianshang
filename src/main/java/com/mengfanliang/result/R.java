@@ -1,6 +1,8 @@
 package com.mengfanliang.result;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class R {
@@ -10,6 +12,7 @@ public class R {
 
     private static Map<String,Object> data=new HashMap<String,Object>();
     private static Map<String,Object> meta=new HashMap<String,Object>();
+//    private static List<Object> data1=new ArrayList<>();
 
     private R() {
 
@@ -131,6 +134,13 @@ public static R serverError(){
         this.setData(map);
         return this;
     }
+
+//    public R data1(Object object){
+//        this.data1.add(object);
+//        return this;
+//
+//
+//    }
 
 
 }
